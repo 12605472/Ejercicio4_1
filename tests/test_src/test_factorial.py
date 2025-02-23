@@ -8,13 +8,13 @@ instrucciones de los comentarios'''
 def test_factorial_1_pasa():
     f.Factorial.factorial(1)
         
-def test_factorial_1_falla():
-    with pytest.raises(AttributeError):
-        f.Factorial.factorial(1)
+#def test_factorial_1_falla():
+#    with pytest.raises(AttributeError):
+#        f.Factorial.factorial(1)
     
 # Test 2    
-def test_tipo_falla():
-    assert f.Factorial.factorial("d")==1
+#def test_tipo_falla():
+#    assert f.Factorial.factorial("d")==1
     
 def test_tipo_pasa():
     assert f.Factorial.factorial(1)==1
@@ -23,13 +23,13 @@ def test_tipo_pasa():
 def test_negativo_pasa():
     f.Factorial.factorial(-1)
         
-def test_negativo_falla():
-    with pytest.raises(f.Negativo):
-        f.Factorial.factorial(-1)
+#def test_negativo_falla():
+#    with pytest.raises(f.Negativo):
+#        f.Factorial.factorial(-1)
         
 #Test 4
-def test_positivo_falla():
-    assert f.Factorial.factorial(4)==20
+#def test_positivo_falla():
+#    assert f.Factorial.factorial(4)==20
     
 def test_positivo_pasa():
     assert f.Factorial.factorial(4)==24
